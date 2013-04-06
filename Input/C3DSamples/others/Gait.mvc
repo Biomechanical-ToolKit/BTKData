@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MokkaModelVisualConfiguration name="Gait" version="1.0">
+    <MarkersList>
+        <Marker label="R.Shoulder" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Offset" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Elbow" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Wrist" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Shoulder" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Elbow" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Wrist" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.ASIS" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.ASIS" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="V.Sacral" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Thigh" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Knee" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Shank" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Ankle" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Heel" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Toe" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Thigh" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Knee" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Shank" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Ankle" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Heel" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Toe" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Knee.Medial" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Ankle.Medial" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Knee.Medial" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Ankle.Medial" radius="26" colorR="1" colorG="0.069276" colorB="0.194537" visible="1" trajectory="0"/>
+        <Marker label="R.Foot.Medial" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="R.Foot.Lateral" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Foot.Medial" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="L.Foot.Lateral" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="C7" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="IJ" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+        <Marker label="PX" radius="8" colorR="1" colorG="1" colorB="1" visible="1" trajectory="0"/>
+    </MarkersList>
+    <SegmentsList>
+        <Segment label="Thorax" colorR="1" colorG="1" colorB="1" visible="1" surface="1" description="">
+            <Point label="R.Shoulder"/>
+            <Point label="L.Shoulder"/>
+            <Point label="C7"/>
+            <Point label="IJ"/>
+            <Link pt1="R.Shoulder" pt2="C7"/>
+            <Link pt1="R.Shoulder" pt2="IJ"/>
+            <Link pt1="L.Shoulder" pt2="C7"/>
+            <Link pt1="L.Shoulder" pt2="IJ"/>
+            <Link pt1="C7" pt2="IJ"/>
+            <Face pt1="R.Shoulder" pt2="IJ" pt3="C7"/>
+            <Face pt1="C7" pt2="IJ" pt3="L.Shoulder"/>
+        </Segment>
+        <Segment label="Pelvis" colorR="0.490654" colorG="1" colorB="0.445624" visible="1" surface="1" description="">
+            <Point label="R.ASIS"/>
+            <Point label="L.ASIS"/>
+            <Point label="V.Sacral"/>
+            <Link pt1="R.ASIS" pt2="L.ASIS"/>
+            <Link pt1="R.ASIS" pt2="V.Sacral"/>
+            <Link pt1="L.ASIS" pt2="V.Sacral"/>
+            <Face pt1="R.ASIS" pt2="L.ASIS" pt3="V.Sacral"/>
+        </Segment>
+    </SegmentsList>
+</MokkaModelVisualConfiguration>

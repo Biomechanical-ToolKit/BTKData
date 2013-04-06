@@ -1,0 +1,5 @@
+This is a C3D file data that does not match the parameters.
+
+The actual POINT:RATE was 200 and the actual ANALOG:RATE
+was 1000.  However the parameters claim that the POINT:RATE
+is 60 and the ANALOG:RATE is 1020 - both are incorrect.
